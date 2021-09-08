@@ -1,3 +1,5 @@
+/* General Styling */
+
 * {
   box-sizing: border-box;
 }
@@ -32,6 +34,7 @@ nav {
   justify-content: center;
 }
 
+/* Modify the appearance of the links in nav bar */
 nav a {
   color: #13293d;
   padding: 14px 20px;
@@ -44,15 +47,15 @@ main {
   flex-wrap: wrap;
 }
 
+/* About Me section properties  */
 #aboutme{
-  flex: 1;
   background-color: #fcfcfc;
   padding: 10px;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
 }
 
-
+/* Settings up the profile picture to be round and centered */
 #profile-img{
   border-radius: 50%;
   width: 75px;
@@ -60,19 +63,15 @@ main {
   justify-content: center;
 }
 
+/* Settings up the profile description to be centered and spaced properly*/
 .profile-desc{
-  /* display:block; */
   width: 100%;
   text-align: center;
-  padding: 0 100px;
-  background-color: #fcfcfc;
-  padding-bottom: 30px;
-  /* margin-bottom: 30px; */
+  padding: 30px 100px;
 }
 
-
+/* Properties fo Work section */
 #work {
-  flex: 4;
   background-color: rgba(212, 200, 200, 0.863);
   padding: 20px;
   display: flex;
@@ -81,15 +80,16 @@ main {
   font-family: 'Montserrat', sans-serif;
 }
 
+/* Modify the Work header */
 #work h2{
   width: 100%;
   text-align: center;
 }
 
+/* Properties for the project cards inside the Work section */
 .project {
   border-style: solid;
   border-width: 5px;
-  /* border-radius: 10px; */
   border-color: #e4f8f5;
   padding: 10px;
   flex: 0 1 600px;
@@ -111,15 +111,17 @@ main {
   text-align: center;
 }
 
+/* Settings up the project initial card to be growable, shrinkable, and with an initial length of 1000px  */
 .project.initial{
   flex: 2 1 1000px;
-  /* width: 100%; */
 }
 
+/* Modify the height of the image in the project initial */
 .project.initial img{
   height: 88%;
 }
 
+/* Get in touch footer */
 #contact {
   justify-content: center;
   padding: 20px;
@@ -129,6 +131,7 @@ main {
   text-align: center;
 }
 
+/* Modify the links in footer */
 .footer-link{
   margin: auto 20px;
   font-family: 'Montserrat', sans-serif;
@@ -136,7 +139,7 @@ main {
   color: #EAF6F6;
 }
 
-
+/* Contact Me button properties */
 .btn{
   display: flex;
   justify-content: center;
@@ -160,7 +163,8 @@ main {
   margin-top: 20px;
 }
 
-
+/* Contact Me button pseudoclass, when Contact Me button is hovered over, 
+the button will be more rounded and change color gradient */
 .btn:hover {
   border: solid #0059A0 1px;
   background: #afada7;
@@ -174,6 +178,7 @@ main {
   text-decoration: none;
 }
 
+/* Large smartphones - navbar is wrapped in column */
 @media screen and (max-width: 768px) {
   nav {
     flex-direction: column;
