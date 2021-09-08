@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+header {
+  padding: 250px;
+  text-align: center;
+  background: #ffffff;
+}
+
+h1{
+  margin: 50px auto 0 auto;
+  font-family:'Montserrat', sans-serif;
+  font-size: 90px;
+  color: #000000;  
+}
+
+h2{
+  font-size: 30px;
+  font-family:'Montserrat', sans-serif;
+}
+
+/* 
+What happens when we set the display property to flex?
+The flex container becomes flexible 
+*/
+nav {
+  display: flex;
+  background-color: #ffffff;
+  list-style-type: none;
+  justify-content: center;
+}
+
+nav a {
+  color: #13293d;
+  padding: 14px 20px;
+  text-decoration: none;
+  margin: auto 20px;
+}
+
+/* nav li{
+  display: inline-block;
+} */
+
+/* 
+What is the flex-wrap property?
+It specifies whether the flex items should wrap or not 
+*/
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#aboutme{
+  flex: 1;
+  background-color: #fcfcfc;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  /* font-size: ; */
+}
+
+
+#profile-img{
+  border-radius: 50%;
+  width: 75px;
+  margin-top: 25px;
+  justify-content: center;
+}
+
+.profile-desc{
+  /* display:block; */
+  width: 100%;
+  text-align: center;
+  padding: 0 100px;
+  background-color: #fcfcfc;
+  padding-bottom: 30px;
+  /* margin-bottom: 30px; */
+}
+
+
+#work {
+  flex: 4;
+  background-color: rgba(212, 200, 200, 0.863);
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#work h2{
+  width: 100%;
+  text-align: center;
+}
+
+.project {
+  border-style: solid;
+  border-width: 5px;
+  /* border-radius: 10px; */
+  border-color: #e4f8f5;
+  padding: 10px;
+  flex: 0 1 600px;
+  margin: 10px;
+  height: 500px;
+}
+
+.project img {
+  width: 100%;
+}
+
+.project header {
+  padding: 20px;
+  background-color: #fcfcfc;
+  font-weight: bold;
+}
+
+.project p {
+  text-align: center;
+}
+
+.project.initial{
+  flex: 2 1 1000px;
+  /* width: 100%; */
+}
+
+.project.initial img{
+  height: 88%;
+}
+
+#contact {
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  background: #606c77;
+  color: rgb(255, 244, 244);
+  text-align: center;
+}
+
+.footer-link{
+  margin: auto 20px;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  color: #EAF6F6;
+}
+
+
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background: #bdbdbd;
+  width:200px;
+  height:20px;  
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  color: rgb(255, 244, 244);
+  text-decoration: none;
+  cursor: pointer;
+  background-image: -webkit-linear-gradient(top, #e2e5e5, #788181);
+  background-image: -moz-linear-gradient(top, #e2e5e5, #788181);
+  background-image: -ms-linear-gradient(top, #e2e5e5, #788181);
+  background-image: -o-linear-gradient(top, #e2e5e5, #788181);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+
+.btn:hover {
+  border: solid #0059A0 1px;
+  background: #afada7;
+  background-image: -webkit-linear-gradient(top, #afada7, #f5dbc5);
+  background-image: -moz-linear-gradient(top, #afada7, #f5dbc5);
+  background-image: -ms-linear-gradient(top, #afada7, #f5dbc5);
+  background-image: -o-linear-gradient(top, #afada7, #f5dbc5);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+}
+
+
