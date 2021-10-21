@@ -4,18 +4,50 @@
     <title>Sistania Bong</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
   </head>
   <body>
     <!-- Header -->
-    <header>
-      <h1>Sistania Bong</h1>
-      <nav>
+    <!-- <header>
+      <h1>Sistania Bong</h1> -->
+      <!-- <nav>
         <a href="#aboutme">About Me</a>
         <a href="#work">Work</a>
         <a href="#contact">Get In Touch</a>
-      </nav>
-    </header>
+      </nav> -->
+<!-- 
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" href="#aboutme">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#work">Work</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Get In Touch</a>
+        </li>
+      </ul>
+    </header> -->
+<header>
+    <div class="jumbotron jumbotron-fluid head">
+      <div class="container">
+        <h1 class="display-4">Sistania Bong</h1>
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutme">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#work">Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Get In Touch</a>
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+  </header>
 
     <main>
       <!-- Sidebar About Me -->
@@ -26,24 +58,57 @@
       </section>
 
       <!-- Work section -->
+      <!-- <div class="row">
+        <div class="col-sm-12">
+          <div class="card" style="width: 100%;">
+            <img class="card-img-top" src="./assets/images/project_1.png" alt="project one" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Meal Prep Life</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="card-body">
+                <a href="https://github.com/sistaniabong/meal-prep-life" class="card-link">Repo</a>
+                <a href="https://sistaniabong.github.io/meal-prep-life/" class="card-link">Link</a>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="col-sm-4">col-sm-4</div> -->
+      <!-- <div class="row">
+        <div class="col-sm">col-sm</div>
+        <div class="col-sm">col-sm</div>
+        <div class="col-sm">col-sm</div>
+      </div> -->
+      
+
+
+
+
       <section id="work">
         <h2>Work</h2>
         <section class="project initial">
-          <header>Project One</header>
-          <a href="https://sistaniabong.github.io/cv2/">
-            <img src="./assets/images/pngtree-dark-vector-abstract-background-image_302715.jpeg" alt="project one" />
+          <a href='https://github.com/sistaniabong/meal-prep-life'>
+            <header>Meal Prep Life</header>
+          </a>
+          <a href="https://sistaniabong.github.io/meal-prep-life/">
+            <img src="./assets/images/project_1.png" alt="project one"/>
+          </a>
+          <h1> </h1>
+        </section>
+        <section class="project other">
+          <a href='https://github.com/sistaniabong/day-planner'>
+            <header>Day Planner</header>
+          </a>
+          <a href="https://sistaniabong.github.io/day-planner/">
+            <img src="./assets/images/day_planner.png" alt="project two" />
           </a>
         </section>
-        <section class="project">
-          <header>Project Two</header>
-          <a href="https://www.google.com/">
-            <img src="./assets/images/182-1820245_abstract-backgrounds-png1-orange-abstract-background-png.png" alt="project two" />
+        <section class="project other">
+          <a href='https://github.com/sistaniabong/weather-dashboard'>
+            <header>Weather Dashboard</header>
           </a>
-        </section>
-        <section class="project">
-          <header>Project Three</header>
-          <a href="#">
-            <img src="./assets/images/182-1820245_abstract-backgrounds-png1-orange-abstract-background-png.png" alt="project three"/>
+          <a href="https://sistaniabong.github.io/weather-dashboard/">
+            <img src="./assets/images/weather_dashboard.png" alt="project three" />
           </a>
         </section>
       </section>
@@ -53,9 +118,9 @@
     <footer id="contact">
       <h2>Get In Touch</h2>
       <a class="footer-link" href="https://www.linkedin.com/in/sistania-bong/">LinkedIn</a>
-      <a class="footer-link" href="https://www.linkedin.com/in/sistania-bong/">Website</a>
+      <a class="footer-link" href="./assets/images/Sistania_Bong_Resume_2021.pdf">Resume</a>
       <a class="footer-link" href="https://github.com/sistaniabong">GitHub</a>
-      <a class="btn" href="mailto:random@gmail.com">CONTACT ME</a>
+      <a class="btn" href="mailto:sistaniawibonele@gmail.com">CONTACT ME</a>
       <p class="footer">© 2021 Sistania Bong</p>
     </footer>
   </body>

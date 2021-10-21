@@ -10,9 +10,21 @@ body {
 }
 
 header {
-  padding: 250px;
+  /* display: flex; */
+  padding: 175px;
   text-align: center;
   background: #ffffff;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.head{
+  background: #ffffff;
+}
+.display-4{
+  font-family:'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 90px;
 }
 
 h1{
@@ -27,16 +39,23 @@ h2{
   font-family:'Montserrat', sans-serif;
 }
 
-nav {
-  display: flex;
-  background-color: #ffffff;
-  list-style-type: none;
-  justify-content: center;
-}
+/* .nav { */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* background-color: #ffffff; */
+/* } */
 
 /* Modify the appearance of the links in nav bar */
-nav a {
+a {
   color: #13293d;
+  font-size: 20px;
+  text-decoration: none;
+
+}
+
+.nav-link {
+  color: #13293d;
+  font-size: 20px;
   padding: 14px 20px;
   text-decoration: none;
   margin: auto 20px;
@@ -97,9 +116,18 @@ main {
   height: 500px;
 }
 
-.project img {
-  width: 100%;
+.project.other{
+  height: 400px;
 }
+.project.other img{
+  width: 100%;
+  height: 80%;
+}
+
+/* .project img {
+  width: 100%;
+  height: 100%;
+} */
 
 .project header {
   padding: 20px;
@@ -118,7 +146,8 @@ main {
 
 /* Modify the height of the image in the project initial */
 .project.initial img{
-  height: 88%;
+  width: 100%;
+  height: 85%;
 }
 
 /* Get in touch footer */
